@@ -2,16 +2,20 @@
   "name": "web-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node src/app.js"
+  "engines": {
+    "node": "16.x"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "hbs": "^4.1.2",
-    "postman-request": "*"
-  }
+}
+  "main": "index.js",
+"scripts": {
+  "start": "node src/app.js"
+},
+"keywords": [],
+"author": "",
+"license": "ISC",
+"dependencies": {
+  "express": "^4.17.1",
+  "hbs": "^4.1.2",
+  "postman-request": "*"
+}
 }
