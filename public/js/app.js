@@ -7,7 +7,7 @@ const messageTwo = document.querySelector('#message-two');
 weatherForm.addEventListener('submit', (e) => {
   let address = search.value;
   address = encodeURIComponent(address);
-  const url = `http://127.0.0.1:3000/weather?address=${address}`;
+  const url = `/weather?address=${address}`;
   messageOne.textContent = "loading Forecast...";
   messageTwo.textContent = "";
 

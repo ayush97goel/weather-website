@@ -5,7 +5,7 @@ const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 // express package exposes only a single function
 const app = express();
-
+const port = process.env.PORT || 3000;
 // define paths for express config
 const publicDirectoryPath = path.join(__dirname, '../public');
 const viewsPath = path.join(__dirname, '../templates/views');
@@ -90,8 +90,7 @@ app.get('*', (req, res) => {
 });
 
 // starting the server on port 3000
-app.listen(3000, () => {
-  console.log("Server is up on port 3000");
+app.listen(port, () => {
+  console.log("Server is up on port" + port);
 })
 
-console.log('after server start');
